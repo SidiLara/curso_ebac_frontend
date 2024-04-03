@@ -1,14 +1,23 @@
-document.getElementById("campsValue").addEventListener("submit", function (e) {
-    e.preventDefault();
-    const campoA = parseFloat(document.getElementById("campoA").value);
-    const campoB = parseFloat(document.getElementById("campoB").value);
-    const mensagemElement = document.querySelector(".mensagem");
+$(document).ready(function(){
+    $('form button').click(function(){
+       
+    })
+    
 
-    if (isNaN(campoA) || isNaN(campoB)) {
-        mensagemElement.textContent = "Por favor, insira valores numéricos válidos.";
-    } else if (campoB <= campoA) {
-        mensagemElement.textContent = "O Campo B deve ser maior que o Campo A.";
-    } else {
-        mensagemElement.textContent = "Tudo OK!";
-    }
-});
+    $('#lista-tarefas').on('click', 'li', function () {
+        $(this).toggleClass('riscado');
+    })
+
+
+    $('form').on('submit', function(e){
+        e.preventDefault();
+        const novaTarefa = $('#nova-tarefa').val();
+        const novoItem = $('<li></li>').text(novaTarefa);
+
+        $(novoItem).appendTo('ul');
+        $('#nova-tarefa').val('');
+    })
+
+    
+    
+})

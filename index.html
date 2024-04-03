@@ -4,21 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificação de Campos</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="./main.css">
+
 </head>
 
 <body>
-    <div class="form-container">
-        <h1>VERIFICAÇÂO DE CAMPOS</h1>
-        <form id="campsValue" action="#">
-            <input type="number" id="campoA" placeholder="Campo A" required />
-            <input type="number" id="campoB" placeholder="Campo B" required />
-            <button type="submit">Verificar</button>
+    <div class="container">
+        <form id="form-tarefas">
+            <h1>Lista de Tarefas</h1>
+            <input type="text" id="nova-tarefa" placeholder="Nome tarefa" required>
+            <button type="submit" >Cadastrar</button>
         </form>
-        <p class="mensagem"></p>
+        <ul id="lista-tarefas">
+        </ul>
     </div>
-    <script src="main.js"></script>
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+   </body>
 </html>
