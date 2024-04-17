@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(70, 3, 110);
+}
+.container {
+    
+    max-width: 400px;
+    width: 100%;
+    margin: 5% auto;
+    
+}
+
+form{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100%;
+    padding: 30px;
+}
+
+h2 {
+    font-weight: bold;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.btn{
+    width: 100%;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.form-check{
+    margin: 10px 0;
+}
+
+mark{
+    color: blue;
+    cursor: pointer;
+    border-radius: 5px;
+}
