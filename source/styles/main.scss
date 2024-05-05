@@ -1,0 +1,27 @@
+@use 'variaveis';
+
+@mixin altura {
+    height: 33.33%;
+}
+
+.container {
+    max-width: 500px;
+    align-items: center;
+    height: 300px;
+    margin: 15% auto;
+
+    .verde {
+        background-color: variaveis.$corPrimaria;
+        @include altura;
+    }
+    
+    .amarelo {
+        background-color: variaveis.$corSecundaria;
+        @include altura;
+    }
+    
+    .azul {
+        background-color: variaveis.$corTerciaria;
+        @include altura;
+    }
+}
