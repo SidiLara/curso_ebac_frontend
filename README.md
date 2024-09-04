@@ -3,4 +3,4 @@
 
 [V]Criar uma função que irá retornar apenas os alunos que tiveram a nota maior ou igual à 6;
 
-[ ]Crie uma branch exercicio_es6 no repositório do curso, armazene o código nesta branch e nos envie o link através da plataforma. 
+[V]Crie uma branch exercicio_es6 no repositório do curso, armazene o código nesta branch e nos envie o link através da plataforma. 
